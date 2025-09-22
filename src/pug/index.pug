@@ -10,10 +10,6 @@ html(lang='en')
 
         title GrouplyGiftr - Coordinate and purchase group gift cards
 
-        // Mailchimp signup form
-        script#mcjs.
-            !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2961132dca5f02e8c67b2f324/e3444776e3a69ffd69214ca88.js");
-
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
@@ -44,7 +40,34 @@ html(lang='en')
                             h1.mb-5 GrouplyGiftr:<br/>COMING SOON!
                             h2.mb-5 Coordinate and purchase group gift cards
 
-        div#mc_embed_signup
+
+                            // Mailchimp signup form
+                            form(action="https://gmail.us21.list-manage.com/subscribe/post?u=2961132dca5f02e8c67b2f324&id=89974a6afb&f_id=009ef5e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+                                .container
+                                    .row.justify-content-center
+                                        .col-xl-8
+                                            h2.text-white.mb-3 I am interested in GrouplyGiftr updates!
+                                            .small.text-white.mb-3 
+                                                span.me-1 * 
+                                                | indicates required
+                                            .mb-3
+                                                label.form-label.text-white(for="mce-EMAIL") Email Address 
+                                                    span *
+                                                input.form-control#mce-EMAIL(type="email" name="EMAIL" class="required email" required)
+                                            .mb-3
+                                                label.form-label.text-white(for="mce-FNAME") First Name
+                                                input.form-control#mce-FNAME(type="text" name="FNAME")
+                                            .mb-3
+                                                label.form-label.text-white(for="mce-LNAME") Last Name
+                                                input.form-control#mce-LNAME(type="text" name="LNAME")
+                                            #mce-responses.mb-3
+                                                #mce-error-response.alert.alert-danger.d-none
+                                                #mce-success-response.alert.alert-success.d-none
+                                            // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                                            div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                                                input(type="text" name="b_2961132dca5f02e8c67b2f324_89974a6afb" tabindex="-1" value="")
+                                            .text-center.mb-3
+                                                input.btn.btn-primary.btn-lg#mc-embedded-subscribe(type="submit" name="subscribe" value="Subscribe")
 
         // Icons Grid
         section.features-icons.bg-light.text-center
