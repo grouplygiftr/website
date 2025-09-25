@@ -20,7 +20,7 @@ html(lang='en')
         link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='/css/styles.css', rel='stylesheet')
 
     body
 
@@ -40,17 +40,21 @@ html(lang='en')
                             h1.mb-5 GrouplyGiftr:<br/>COMING SOON!
                             h2.mb-5 Coordinate and purchase group gift cards
 
+                            div
+                                blockquote(style="font-size: 1.5rem; font-style: italic;")
+                                    | &ldquo;I was in a pinch! I love my kids' teachers, but all the moms and I are way too busy to go juggling envelopes, Venmo&trade; and PayPal&trade;: 
+                                    strong GrouplyGiftr made it easy
+                                    |  to set up individual group gifts for each of my three boys' 17 teachers altogether, all the parents gave less than $5, and I didn't have to lift a finger!&rdquo;
+                                p(style="text-align: right;")
+                                    | &mdash; This could be you
 
                             // Mailchimp signup form
                             form(action="https://gmail.us21.list-manage.com/subscribe/post?u=2961132dca5f02e8c67b2f324&id=89974a6afb&f_id=009ef5e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
                                 .container
                                     .row.justify-content-center
                                         .col-xl-8
-                                            h2.text-white.mb-3 I am interested in GrouplyGiftr updates!
-                                            .small.text-white.mb-3 
                                             .mb-3
-                                                label.form-label.text-white(for="mce-EMAIL") Email Address 
-                                                input.form-control#mce-EMAIL(type="email" name="EMAIL" class="required email" required)
+                                                input.form-control#mce-EMAIL(type="email" name="EMAIL" class="required email" placeholder="email@example.com" required)
                                             .mb-3
                                                 #mce-error-response.alert.alert-danger.d-none
                                                 #mce-success-response.alert.alert-success.d-none
@@ -62,7 +66,20 @@ html(lang='en')
                                             div(style="position: absolute; left: -5000px;" aria-hidden="true")
                                                 input(type="text" name="b_2961132dca5f02e8c67b2f324_89974a6afb" tabindex="-1" value="")
                                             .text-center.mb-3
-                                                input.btn.btn-primary.btn-lg#mc-embedded-subscribe(type="submit" name="subscribe" value="Subscribe")
+                                                input.btn.btn-primary.btn-lg#mc-embedded-subscribe(type="submit" name="subscribe" value="I am interested in GrouplyGiftr updates!")
+
+                            p
+                                |
+                                strong Welcome to GrouplyGiftr
+                                | , an easy way to coordinate 
+                                strong end of year gifts
+                                | for your beloved 
+                                strong teachers
+                                | , coaches, mentors, etc.
+                            p
+                                | 
+                                em This service is brand new
+                                |, and we invite you to join our newsletter to share your early feedback and to get up to the moment updates as we continue to develop and mature this service!
 
         // Icons Grid
         section.features-icons.bg-light.text-center
